@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Vinn en T-shirt! - Blomstermalabladet.se</title>
-	<link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<title>Blomstermalabladet - Enkät</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		label {
+			margin-right: 3px;
+		}
+	</style>
 </head>
 <body>
-	<form action="http://webshare.mah.se/tszagh/response.php" id="usrform" method="get" name="usrform">
-		<div class="typewriter">
-			<h1>Blomstermålabladet</h1>
-		</div><br>
+	<form action="http://webshare.mah.se/tszagh/response.php" id="surveyform" method="GET" name="surveyform">
+		<h1>Inlämningsuppgift 3</h1>
 		<fieldset>
 			<legend>Kontaktuppgifter</legend>
-			<p>Namn:</p><input name="name" required="" type="text" placeholder="Ditt namn"><br>
-			<br>
-			<p>Ålder:</p><input max="130" min="1" name="age" required="" type="number" placeholder="Din ålder"><br>
-			<br>
-		</fieldset><br>
+			<label for="name">Namn:</label>
+			<input type="text" id="name" name="name" placeholder="ex. Karl Olofsson" required="">
+			<br><br>
+			<label for="age">Din ålder:</label>
+			<input type="number" id="age" name="age" min="1" max="130" placeholder="ex. 18" required="">
+			<br><br>
+		</fieldset>
 		<fieldset>
-			<legend>Dina besök på blomstermålabladet</legend>
-			<p>Hur ofta besöker du blomstermålabladet?</p>
-            <input name="freq" required="" type="radio" value="every day"> Varje dag<br>
-			<input name="freq" type="radio" value="every other day"> Varannan dag<br>
-			<input name="freq" type="radio" value="every week"> Varje vecka<br>
-			<br>
-			<p>Vilka delar av blomstermålabladet brukar du besöka?</p><input id="visitsNews" name="visits[]" type="checkbox" value="news"> Nyheter<br>
-			<input id="visitsForeign" name="visits[]" type="checkbox" value="foreign"> Utrikes<br>
-			<input id="visitsDomestic" name="visits[]" type="checkbox" value="domestic"> Inrikes<br>
-			<input id="visitsSports" name="visits[]" type="checkbox" value="sports"> Sport<br>
-			<input id="visitsGossip" name="visits[]" type="checkbox" value="gossip"> Skvaller<br>
-			<input id="visitsWeather" name="visits[]" type="checkbox" value="weather"> Väder<br>
-			<input id="visitsOther" name="visits[]" type="checkbox" value="other"> Övrigt <input id="otherValue" name="other" type="text"><br>
-		</fieldset><br>
+			<legend>Dina besök på Blomstermålabladet</legend>
+			<p>Hur ofta besöker du Blomstermålabladet?</p>
+            <input type="radio" id="everyday" name="visitFrequency" value="every day" required="">
+			<label for="everyday">Varje dag</label><br> 
+			<input type="radio" id="everyotherday" name="visitFrequency" value="every other day"> 
+			<label for="everyotherday">Varannan dag</label><br>
+			<input type="radio" id="everyweek" name="visitFrequency" value="every week">
+			<label for="everyweek">Varje vecka</label><br>
+
+			<p>Vilka delar av Blomstermålabladet brukar du besöka?</p>
+			<input type="checkbox" id="news-cb" name="visitTypes[]"  value="news">
+			<label for="news-cb">Nyheter</label><br>
+			<input type="checkbox" id="foreign-cb" name="visitTypes[]" value="foreign">
+			<label for="foreign-cb">Utrikes</label><br>
+			<input type="checkbox" id="domestic-cb" name="visitTypes[]" value="domestic">
+			<label for="domestic-cb">Inrikes</label><br>
+			<input type="checkbox" id="sports-cb" name="visitTypes[]" value="sports">
+			<label for="sports-cb">Sport</label><br>
+			<input type="checkbox" id="gossip-cb" name="visitTypes[]" value="gossip">
+			<label for="gossip-cb">Skvaller</label><br>
+			<input type="checkbox" id="weather-cb" name="visitTypes[]" value="weather">
+			<label for="weather-cb">Väder</label><br>
+			<input type="checkbox" id="other-cb" name="visitTypes[]" value="other">
+			<label for="other-cb">Övrigt</label><br><br>
+		</fieldset>
 		<fieldset>
 			<legend>Vinn en T-shirt!</legend>
-			<p>Bästa med blomstermålabladet:</p>
-			<textarea cols="50" form="usrform" name="best" rows="4"></textarea><br>
-			<br>
-			<p>Sämsta med blomstermålabladet:</p>
-			<textarea cols="50" form="usrform" name="worst" rows="4"></textarea><br>
-			<br>
-			<p>Epost:</p><input id="emailAddress" placeholder="e-post@exempel.se" type="email"><br>
-			<br>
-			<p>Storlek:</p><select name="size">
+			<p>Ni har möjlighet att vinna en T-shirt om ni fyller i följande information:</p>
+			<label for="best-ta">Bästa med Blomstermålabladet:</label><br>
+			<textarea cols="40" rows="2" id="best-ta" form="surveyform" name="best"></textarea><br><br>
+
+			<label for="worst-ta">Sämsta med Blomstermålabladet:</label><br>
+			<textarea cols="40" rows="2" id="worst-ta" form="surveyform" name="worst"></textarea><br><br>
+
+			<label for="emailaddress">E-post:</label>
+			<input type="email" id="emailaddress" placeholder="ex. e-post@exempel.se" ><br><br>
+			<label for="size">Storlek:</label>
+			<select id="size" name="size">
 				<option value="xs">
 					XS
 				</option>
 				<option value="small">
 					S
 				</option>
-				<option selected value="medium">
+				<option value="medium" selected>
 					M
 				</option>
 				<option value="large">
@@ -58,14 +75,14 @@
 				<option value="xl">
 					XL
 				</option>
-			</select><br>
-			<br>
+			</select><br><br>
 		</fieldset>
 		<fieldset>
 			<legend>Skicka/Återställ</legend>
-			<div class="wrapper">
-				<button type="submit">Skicka</button> <button type="reset" value="Reset">Återställ</button>
-			</div>
+			<br>
+			<button type="submit">Skicka</button> 
+			<button type="reset" value="Reset">Återställ formulär</button>
+			<br><br>
 		</fieldset>
 	</form>
 </body>
