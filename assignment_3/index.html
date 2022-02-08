@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Blomstermalabladet - Enkät</title>
+	<title>Inlämningsuppgift 3</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		label {
@@ -11,25 +11,25 @@
 </head>
 <body>
 	<form action="http://webshare.mah.se/tszagh/response.php" id="surveyform" method="GET" name="surveyform">
-		<h1>Inlämningsuppgift 3</h1>
+		<h1>Blomstermalabladet - Enkät</h1>
 		<fieldset>
 			<legend>Kontaktuppgifter</legend>
 			<label for="name">Namn:</label>
 			<input type="text" id="name" name="name" placeholder="ex. Karl Olofsson" required="">
 			<br><br>
 			<label for="age">Din ålder:</label>
-			<input type="number" id="age" name="age" min="1" max="130" placeholder="ex. 18" required="">
+			<input type="number" id="age" name="age" min="1" max="140" placeholder="ex. 18" required="">
 			<br><br>
 		</fieldset>
 		<fieldset>
 			<legend>Dina besök på Blomstermålabladet</legend>
 			<p>Hur ofta besöker du Blomstermålabladet?</p>
-            <input type="radio" id="everyday" name="visitFrequency" value="every day" required="">
-			<label for="everyday">Varje dag</label><br> 
-			<input type="radio" id="everyotherday" name="visitFrequency" value="every other day"> 
-			<label for="everyotherday">Varannan dag</label><br>
-			<input type="radio" id="everyweek" name="visitFrequency" value="every week">
-			<label for="everyweek">Varje vecka</label><br>
+            <input type="radio" id="everyday-rb" name="visitFrequency" value="every day" required="">
+			<label for="everyday-rb">Varje dag</label><br> 
+			<input type="radio" id="everyotherday-rb" name="visitFrequency" value="every other day"> 
+			<label for="everyotherday-rb">Varannan dag</label><br>
+			<input type="radio" id="everyweek-rb" name="visitFrequency" value="every week">
+			<label for="everyweek-rb">Varje vecka</label><br>
 
 			<p>Vilka delar av Blomstermålabladet brukar du besöka?</p>
 			<input type="checkbox" id="news-cb" name="visitTypes[]"  value="news">
