@@ -19,18 +19,32 @@
         caption {
             font-size: x-large;
         }
-        a {
-            color: rgb(158, 93, 93);
-        }
         img {
             width: 10rem; 
             height: auto;
         }
-        
+        /*Styling for links*/
+        a {
+            outline: none;
+            text-decoration: none;
+        }
+        a:link {
+            color: rgb(201, 78, 78);
+        }
+        a:visited {
+            color: rgb(218, 163, 163);
+        }
+        a:hover {
+            border-bottom: solid;
+        }
+        footer {
+            font-size: small;
+            text-align: center;
+        }
 	</style>
 </head>
 <body>
-	<!--Huvudmaterial-->
+	<!--Main material-->
     <table>
         <caption>Below follows a table with my favorite artists/bands</caption>
         <thead>
@@ -46,32 +60,101 @@
         <tbody>
             <!--Row about Disturbed-->
             <tr>
-                <td><img src="/assignment_2/covers/disturbed.jpg" alt="Disturbed: Indestructible album cover"></td>
+                <td><img src="/assignment_2/covers/disturbed.gif" alt="Disturbed: Asylum album cover"></td>
                 <td>Disturbed</td>
-                <td>Dan Donegan, Mike Wengren, David Draiman, John Moyer.</td>
-                <td>Indestructible</td>
+                <td>Dan Donegan, Mike Wengren, David Draiman and John Moyer</td>
+                <td>Asylum</td>
                 <td>USA</td>
-                <td><a href="https://en.wikipedia.org/wiki/Disturbed_(band)">Wikipedia</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Disturbed_(band)" target="_blank" rel="noopener noreferrer">Wikipedia</a></td>
             </tr>
             <!--Row about Metallica-->
             <tr>
                 <td><img src="/assignment_2/covers/metallica.jpg" alt="Metallica: Master of Puppets album cover"></td>
                 <td>Metallica</td>
-                <td>James Hetfield, Lars Ulrich, Kirk Hammett, Robert Trujillo.</td>
+                <td>James Hetfield, Lars Ulrich, Kirk Hammett and Robert Trujillo</td>
                 <td>Master Of Puppets</td>
                 <td>USA</td>
-                <td><a href="https://en.wikipedia.org/wiki/Metallica">Wikipedia</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Metallica" target="_blank" rel="noopener noreferrer">Wikipedia</a></td>
             </tr>
-            <!--Row about Disturbed-->
+            <!--Row about Eminem-->
             <tr>
-                <td><img src="/assignment_2/covers/disturbed.jpg" alt="Disturbed: Indestructible album cover"></td>
-                <td>Disturbed</td>
-                <td>Dan Donegan, Mike Wengren, David Draiman, John Moyer.</td>
-                <td>Indestructible</td>
+                <td><img src="/assignment_2/covers/eminem.jpg" alt="The Slim Shady LP album cover"></td>
+                <td>Eminem</td>
+                <td>Marshall Bruce Mathers III</td>
+                <td>The Slim Shady LP</td>
                 <td>USA</td>
-                <td><a href="https://en.wikipedia.org/wiki/Disturbed_(band)">Wikipedia</a></td>
+                <td><a href="https://en.wikipedia.org/wiki/Eminem" target="_blank" rel="noopener noreferrer">Wikipedia</a></td>
+            </tr>
+            <!--Row about Wu-Tang Clan-->
+            <tr>
+                <td><img src="/assignment_2/covers/wutangclan.jpg" alt="Enter the Wu-Tang (36 Chambers) album cover"></td>
+                <td>Wu-Tang Clan</td>
+                <td>Robert Fitzgerald Diggs, Gary Grice, Russell Tyrone Jones, Clifford Smith, Corey Woods, 
+                    Dennis Coles, Jason Hunter, Lamont Jody Hawkins, Elgin Turner and Darryl Hill</td>
+                <td>Enter the Wu-Tang (36 Chambers)</td>
+                <td>USA</td>
+                <td><a href="https://en.wikipedia.org/wiki/Wu-Tang_Clan" target="_blank" rel="noopener noreferrer">Wikipedia</a></td>
+            </tr>
+            <!--Row about Yasin-->
+            <tr>
+                <td><img src="/assignment_2/covers/yasin.jpg" alt="Handen under Mona Lisas kjol (Pt:1) album cover"></td>
+                <td>Yasin</td>
+                <td>Yasin Abdullahi Mahamoud</td>
+                <td>Handen under Mona Lisas kjol (Pt:1)</td>
+                <td>Sweden</td>
+                <td><a href="https://en.wikipedia.org/wiki/Yasin_(rapper)" target="_blank" rel="noopener noreferrer">Wikipedia</a></td>
+            </tr>
+            <!--Row about Tupac Shakur-->
+            <tr>
+                <td><img src="/assignment_2/covers/tupac.jpg" alt="All Eyez on Me album cover"></td>
+                <td>Tupac Shakur</td>
+                <td>Tupac Amaru Shakur</td>
+                <td>All Eyez on Me</td>
+                <td>USA</td>
+                <td><a href="https://en.wikipedia.org/wiki/Tupac_Shakur" target="_blank" rel="noopener noreferrer">Wikipedia</a></td>
+            </tr>
+            <!--Row about The Notorious B.I.G.-->
+            <tr>
+                <td><img src="/assignment_2/covers/biggie.jpg" alt="Ready to Die album cover"></td>
+                <td>The Notorious B.I.G.</td>
+                <td>Christopher George Latore Wallace</td>
+                <td>Ready to Die</td>
+                <td>USA</td>
+                <td><a href="https://en.wikipedia.org/wiki/The_Notorious_B.I.G." target="_blank" rel="noopener noreferrer">Wikipedia</a></td>
+            </tr>
+            <!--Row about Avicii-->
+            <tr>
+                <td><img src="/assignment_2/covers/avicii.png" alt="True album cover"></td>
+                <td>Avicii</td>
+                <td>Tim Bergling</td>
+                <td>True</td>
+                <td>Sweden</td>
+                <td><a href="https://en.wikipedia.org/wiki/Avicii" target="_blank" rel="noopener noreferrer">Wikipedia</a></td>
+            </tr>
+            <!--Row about AC/DC-->
+            <tr>
+                <td><img src="/assignment_2/covers/acdc.gif" alt="Back in Black album cover"></td>
+                <td>AC/DC</td>
+                <td>Malcolm Young, Dave Evans, Larry Van Kriedt, Colin Burgess, Peter Clack, Rob Bailey, Bon Scott, Phil Rudd,
+                    Mark Evans, Cliff Williams, Brian Johnson, Simon Wright, Angus Young, Stevie Young and Chris Slade
+                </td>
+                <td>Back in Black</td>
+                <td>Australia</td>
+                <td><a href="https://en.wikipedia.org/wiki/AC/DC" target="_blank" rel="noopener noreferrer">Wikipedia</a></td>
+            </tr>
+            <!--Row about Sia-->
+            <tr>
+                <td><img src="/assignment_2/covers/sia.png" alt="1000 Forms of Fear album cover"></td>
+                <td>Sia</td>
+                <td>Sia Kate Isobelle Furler</td>
+                <td>1000 Forms of Fear</td>
+                <td>Australia</td>
+                <td><a href="https://en.wikipedia.org/wiki/Sia_(musician)" target="_blank" rel="noopener noreferrer">Wikipedia</a></td>
             </tr>
         </tbody>
     </table>
+    <footer>
+        <p>Written in HTML 5 & CSS 2.1 by Malek Abdul Sater</p>
+    </footer>
 </body>
 </html>
