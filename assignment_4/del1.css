@@ -1,0 +1,47 @@
+img {
+    width: 20%; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-family: Arial;
+    background-color: #111111;
+    color: white;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+/*ul {
+    display: inline-block;
+}*/
+/*menu.ol {
+display: inline-block;
+}*/
+
+/*CSS kod för menyn*/
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111111;
+    float: left;
+    margin-bottom: 5rem;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #3a3a3a;
+}
+/*CSS kod för fornot*/
+footer {
+    font-size: 0.8rem;
+}
