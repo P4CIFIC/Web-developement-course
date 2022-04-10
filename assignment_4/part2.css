@@ -1,7 +1,11 @@
+body {
+    background-color: rgb(255, 239, 220);
+}
 h1 {
-    font-family: Arial;
-    background-color: #111111;
-    color: white;
+    font-family: Lato;
+    background-color: #333;
+    color: #00905b;
+    font-weight: lighter;
 }
 
 h2 {
@@ -13,7 +17,7 @@ h3 {
 }
 
 h1, h2, h3 {
-    text-align: center;
+    text-align: center; 
 }
 
 ol.center, ul.center {
@@ -23,6 +27,7 @@ ol.center, ul.center {
 
 p {
     text-align: center;
+    font-family: Georgia;
 }
 
 ul.menu {
@@ -32,23 +37,33 @@ ul.menu {
     overflow: hidden;
     background-color: #333;
 }
-  
+
 li.menu {
-    float: left;
+float: left;
 }
-  
+
 li.menu a {
-    display: block;
-    color: white;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.active {
+background-color: #04AA6D;
+}
+
+/*CSS kod för fotnot*/
+footer {
+    font-size: 0.8rem;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-li.menu a:hover:not(.active) {
-    background-color: #111;
-}
-  
-a.active {
-    background-color: #00905b;
 }
