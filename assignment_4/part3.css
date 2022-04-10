@@ -1,40 +1,5 @@
 body {
-    background-color: rgb(255, 223, 184);
-}
-
-img {
-    width: 20%; 
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-h1 {
-    font-family: Arial;
-    background-color: #111111;
-    color: white;
-}
-
-h2 {
-    border-style: solid;
-}
-
-h3 {
-    font-style: italic;
-}
-
-h1, h2, h3 {
-    text-align: center;
-}
-
-ol.center, ul.center {
-   text-align: center;
-   list-style-position: inside;
-}
-
-p {
-    text-align: center;
+    background-color: rgb(173, 217, 230);
 }
 
 ul.menu {
@@ -55,6 +20,7 @@ li.menu a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-style: normal;
 }
   
 li.menu a:hover:not(.active) {
@@ -63,4 +29,55 @@ li.menu a:hover:not(.active) {
   
 a.active {
     background-color: #00905b;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: Georgia;
+}
+
+li {
+    font-style: italic;
+}
+
+#green {
+    background-color: lightgreen;
+    padding: 1rem;
+    border-style: solid;
+    border-color: white;
+    border-width: 1rem;
+}
+
+#yellow {
+    background-color: yellow;
+    padding: 1rem;
+    border-style: solid;
+    border-color: black;
+    border-width: 1rem;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr {
+    background-color: white;
+    
+}
+
+.row {
+    background-color: darkblue;
+    color: white;
+}
+
+td {
+    text-align: center;
+    padding-right: 2rem;
+    padding-left: 2rem;    
+}
+
+.bolditalic {
+    font-weight: bold;
+    font-style: italic;
 }
