@@ -1,0 +1,62 @@
+header h1, header h2, h1{
+    margin: 1rem 3rem;
+}
+nav {
+    margin: auto 3rem;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+nav li {
+    float: left;
+}
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #111;
+}
+nav #active {
+    background-color: #00905b;
+}
+section {
+    display: flex;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+img {
+    width: 30%; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+article {
+    padding-right: 14rem;
+    flex: 4
+}
+aside {
+    padding-top: 2rem;
+    margin-bottom: 11rem;
+    flex: 1
+}
+aside h4 {
+    color: white;
+    background-color: #333;
+    padding: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+footer {
+    margin:10rem auto 0;
+    text-align: center;
+}
