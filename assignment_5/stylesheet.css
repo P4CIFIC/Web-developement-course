@@ -1,4 +1,4 @@
-header h1, header h2, h1{
+header{
     margin: 1rem 3rem;
 }
 nav {
@@ -29,11 +29,10 @@ nav #active {
 }
 section {
     display: flex;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    margin: auto 3rem;
 }
 img {
-    width: 30%; 
+    width: 25%; 
     height: auto;
     display: block;
     margin-left: auto;
@@ -57,6 +56,7 @@ aside h4 {
     text-align: center;
 }
 footer {
-    margin:10rem auto 0;
+    margin: 10rem auto 0;
     text-align: center;
+    font-size: 0.8rem;
 }
